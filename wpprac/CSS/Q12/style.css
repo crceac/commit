@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fafafa;
+}
+
+.blog-post {
+    background-color: white;
+    padding: 60px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.meta {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.author {
+    font-weight: 600;
+    color: #3498db;
+}
+
+.content {
+    font-size: 1.1em;
+}
+
+.lead {
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 4px solid #3498db;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    font-style: italic;
+    color: #555;
+    margin: 40px 0;
+    padding: 30px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #e74c3c;
+}
+
+blockquote footer {
+    font-size: 0.7em;
+    font-style: normal;
+    margin-top: 15px;
+    color: #7f8c8d;
+    text-align: right;
+}
+
+ul {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+.post-footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #ecf0f1;
+}
+
+.footnote {
+    font-size: 0.85em;
+    color: #95a5a6;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.footnote a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footnote a:hover {
+    text-decoration: underline;
+}
+
+

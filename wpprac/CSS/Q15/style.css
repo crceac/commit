@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card.basic {
+    border-top: 4px solid #3498db;
+}
+
+.pricing-card.pro {
+    border-top: 4px solid #e74c3c;
+}
+
+.pricing-card.enterprise {
+    border-top: 4px solid #9b59b6;
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.pricing-card h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.price {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+.currency {
+    font-size: 1.5em;
+    vertical-align: top;
+    color: #7f8c8d;
+}
+
+.amount {
+    font-size: 4em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.period {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.features li {
+    padding: 12px 0;
+    border-bottom: 1px solid #ecf0f1;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.features li:before {
+    content: "✓ ";
+    color: #27ae60;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.select-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.basic .select-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.basic .select-btn:hover {
+    background-color: #2980b9;
+}
+
+.pro .select-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.pro .select-btn:hover {
+    background-color: #c0392b;
+}
+
+.enterprise .select-btn {
+    background-color: #9b59b6;
+    color: white;
+}
+
+.enterprise .select-btn:hover {
+    background-color: #8e44ad;
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing-card {
+        max-width: 100%;
+    }
+}
+
+

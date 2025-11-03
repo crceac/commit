@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Web Design Agency</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>Get in touch with our web design agency</p>
+    </header>
+    
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Service Inquiry</legend>
+                <p>What type of service are you interested in?</p>
+                <input type="radio" id="webdesign" name="service" value="webdesign" checked>
+                <label for="webdesign">Web Design</label><br>
+                
+                <input type="radio" id="webdev" name="service" value="webdev">
+                <label for="webdev">Web Development</label><br>
+                
+                <input type="radio" id="seo" name="service" value="seo">
+                <label for="seo">SEO Services</label><br>
+                
+                <input type="radio" id="other" name="service" value="other">
+                <label for="other">Other</label><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Services</legend>
+                <p>Select all that apply:</p>
+                <input type="checkbox" id="maintenance" name="additional[]" value="maintenance">
+                <label for="maintenance">Maintenance & Support</label><br>
+                
+                <input type="checkbox" id="hosting" name="additional[]" value="hosting">
+                <label for="hosting">Hosting Services</label><br>
+                
+                <input type="checkbox" id="branding" name="additional[]" value="branding">
+                <label for="branding">Branding</label><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferred Contact Method</legend>
+                <select name="contact_method" id="contact_method">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="both">Both</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Message</legend>
+                <label for="message">Tell us about your project:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+            </fieldset>
+            
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Web Design Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

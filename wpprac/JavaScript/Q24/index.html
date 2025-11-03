@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate - Image Slideshow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <h1>Property Gallery</h1>
+        <div class="slideshow">
+            <div class="slide active">
+                <img src="property1.jpg" alt="Property 1">
+                <div class="caption">Modern Luxury Villa</div>
+            </div>
+            <div class="slide">
+                <img src="property2.jpg" alt="Property 2">
+                <div class="caption">Downtown Apartment</div>
+            </div>
+            <div class="slide">
+                <img src="property3.jpg" alt="Property 3">
+                <div class="caption">Beachfront Condo</div>
+            </div>
+            <div class="slide">
+                <img src="property4.jpg" alt="Property 4">
+                <div class="caption">Suburban Family Home</div>
+            </div>
+        </div>
+        <div class="controls">
+            <button onclick="previousSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+            <button onclick="toggleAutoPlay()" id="autoplayBtn">Start Auto-Play</button>
+        </div>
+        <div class="indicators">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
